@@ -130,23 +130,18 @@ img {
   margin-top: 1.5em;
 }
 
-.task-legend {
-  font-size: 1.25rem;
-  font-weight: 600;
-  text-transform: capitalize;
-}
-
 .task-list {
-  margin-top: 1.5em;
   display: grid;
-  gap: 1em;
+  gap: .5em;
   text-align: left;
 }
 
 .task-item {
-  padding: .5em 1em;
+  padding: .8em 1em;
   display: flex;
   gap: 1em;
+  border-radius: var(--radius);
+  transition: background-color .3s ease;
 }
 
 .no-tasks-msg {
@@ -192,7 +187,12 @@ img {
   .add-btn:hover {
     background-color: var(--clr-4);
   }
+
   .delete-btn:hover {
     background-color: var(--clr-2);
+  }
+  
+  .task-item:hover {
+    background-color: hsl(from var(--clr-2) h s l/.6);
   }
 }
