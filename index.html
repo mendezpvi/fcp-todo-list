@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>To-Do List</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  
+  <link rel="manifest" href="./site.webmanifest">
+  
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body class="body">
+  <main class="main">
+    <h1 class="main-title">to-do list</h1>
+    <img src="./assets/image/todo-list.avif" alt="" aria-hidden="true" class="todo-img">
+    <form action="#" id="todo-form" class="todo-form" autocomplete="off">
+      <input type="text" id="task-input" placeholder="Add a new task" class="task-input">
+      <button type="submit" class="add-btn btn">add task</button>
+      <button type="reset" class="delete-btn btn">delete all</button>
+      <fieldset class="task-fieldset">
+        <legend class="task-legend">tasks</legend>
+        <ul id="task-list" class="task-list"></ul>
+      </fieldset>
+    </form>
+  </main>
+  <footer class="attribution">
+    <p>Frontend Career Path by <a href="https://v2.scrimba.com/courses" target="_blank" rel="noopener noreferrer" class="attribution-cta">Scrimba</a> - Developed by <a href="https://github.com/mendezpvi/fcp-todo-list" target="_blank" rel="noopener noreferrer" class="attribution-cta">VIMP</a></p>
+  </footer>
+
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
